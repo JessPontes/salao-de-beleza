@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block services %} Lista de agendamentos {% endblock %}
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+    <h2>{{agendamento.services}}</h2>
+    <p>{{agendamento.nome}}</p>
+    <p>{{agendamento.telefone}}</p>
+    <p>{{agendamento.description}}</p>
+    <p>Dia: {{agendamento.datetime_agendamento|date:" d/m/y - H:i"}}horas</p>
+{% endblock %}
